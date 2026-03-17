@@ -1,0 +1,41 @@
+.msgBox {
+    color: #e1efed;
+    font-family: inter, serif;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    scrollbar-color: rgba(163, 209, 203, 0.5) transparent;
+    scrollbar-width: thin;
+}
+.message-received{
+    background-color: rgba(163, 209, 203, 0.5);
+    border-radius: 5px;
+    padding: 0.3rem;
+    margin-top: 0.2rem;
+    display: inline-block;
+    align-self: flex-start;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.message-sent{
+    background-color: rgba(186, 120, 133, 0.5);
+    border-radius: 5px;
+    padding: 0.3rem;
+    margin-top: 0.2rem;
+    display: inline-block;
+    align-self: flex-end;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.message-received:hover, .message-sent:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 932px) {
+    .msgBox {
+        flex: 1;
+        min-height: 0;
+        height: auto;
+    }
+}

@@ -1,0 +1,95 @@
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+    background-color: #a3d1cb33;
+    box-shadow: 0 0 20px 5px #a3d1cb88,
+    inset 0 0 10px 0 #a3d1cb55 ;
+    border-radius: 0.75rem;
+}
+.Welcome_text{
+    text-align: center;
+    padding: 5px;
+    color: #e1efed;
+}
+.Login_text{
+    color: #e1efed;
+}
+.Password_text{
+    color: #e1efed;
+}
+.login_input {
+    width: 100%;
+    padding: 0.1rem 0.5rem;
+    color: #e1efed;
+    font-family: inter, serif;
+    background-color: #e1efed0d;
+    border: none;
+    border-radius: 0.2rem;
+}
+.login_input:focus{
+    outline: none;
+}
+.Password_input {
+    width: 100%;
+    padding: 0.1rem 0.5rem;
+    color: #e1efed;
+    font-family: inter, serif;
+    background-color: #e1efed0d;
+    border: none;
+    border-radius: 0.2rem;
+}
+.Password_input:focus {
+    outline: none;
+}
+
+.Forgot_password {
+    background-color: transparent;
+    border: none;
+    font-size: 0.8rem;
+    color: #e1efed;
+    font-family: inter, serif;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+.Forgot_password:hover{
+    text-decoration: underline;
+}
+.login_btn {
+    padding: 0.5em;
+    background-color: #a3d1cb;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.login_btn:hover {
+    transform: translate(0px,-3px);
+    /*box-shadow: 0 5px 20px -5px #a3d1cb;*/
+}
+
+.Register{
+    color: #e1efed;
+    font-family: inter, serif;
+}
+.Register .register_btn{
+    background-color: transparent;
+    border: none;
+    color: #e1efed;
+}
+.Register .register_btn:hover{
+    text-decoration: underline;
+}
+
+/*MEDIA QUERIES
+    Para 430x932 resolução
+*/
+@media (max-width: 932px) {
+    .login{
+        width: 70%;
+
+    }
+}

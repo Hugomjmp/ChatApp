@@ -1,0 +1,76 @@
+.type-box{
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 2rem;
+    border-top: thin solid #A3D1CB49;
+    background-color: #713a7333;
+    height: 65px;
+}
+.media-container{
+    display: flex;
+    padding-right: 10px;
+
+}
+.message-container{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+
+}
+.message-input{
+    background-color: #ba7885;
+    border-radius: 7px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-family: inter, serif;
+    color: #e1efed;
+    padding-left: 1rem;
+    /*padding: 10px;*/
+}
+.message-input::placeholder{
+    color: #e1efed;
+    font-family: inter, serif;
+}
+.message-input:focus{
+    outline: none;
+}
+.message-input::placeholder:focus{
+    opacity: 0;
+}
+.send-container{
+    /*display: flex;*/
+    height: 100%;
+    padding-left: 10px;
+    align-self: center;
+    /*padding: 10px;*/
+}
+.send-button{
+    height: 100%;
+
+}
+.emoji-container, .file-container, .send-button{
+    background-color: transparent;
+    border: none;
+    color: #e1efed;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.emoji-container i, .file-container i {
+    font-size: 1.2em;
+}
+.emoji-container:hover, .file-container:hover, .send-button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 932px) {
+    .type-box{
+        min-height: 60px;
+        overflow: hidden;
+        padding: 0 32px 0 32px;
+    }
+    .message-container{
+        padding: 10px 0 10px 0;
+    }
+}

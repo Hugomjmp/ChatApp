@@ -1,0 +1,341 @@
+.user-card{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+/*    top: 59%;
+    left: 1%;*/
+    padding: 8px;
+    background-color: #1f1c25;
+    width: 500px;
+    height: 511px;
+    border-radius: 10px;
+    border: thin solid #A3D1CB49;
+    font-family: inter, serif;
+    transform: translateX(-105%);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.user-card.open{
+    transform: translate(0, 0);
+    transition: all 0.3s ease;
+
+}
+.help-button{
+    align-self: start;
+}
+.user-card-sidebar{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-settings{
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0.5em;
+    width: 100%;
+}
+.user-settings-item-content{
+    padding-right: 0.5em;
+}
+.user-settings-item{
+    width: 100%;
+}
+.user-card-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    color: #e1efed;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    background-color: #2d2937;
+}
+.change-profile-picture-button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+.user-picture{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.user-picture-container{
+    width: 88px;
+    height: 88px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%;
+    position: relative;
+}
+.change-profile-picture-button:hover{
+    filter: brightness(50%);
+    /*background-color: rgba(255, 255, 255, 0.31);*/
+}
+.user-picture-container .bi-pencil{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #e1efed;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+.user-picture-container:hover .bi-pencil {
+    opacity: 1;
+
+}
+.change-profile-picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 3;
+}
+.bi.bi-person-circle{
+    padding: 0;
+}
+.user-picture-container i{
+    font-size: 5.5em;
+}
+.general-button, .account-button, .appearance-button, .help-button, .profile-button{
+    text-align: left;
+    width: 100%;
+    color: #e1efed;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-size: large;
+    padding: 0.35em 0 0.35em 0.3em;
+}
+.logoff-button{
+    background-color: transparent;
+    border: none;
+    color: #e1efed;
+    width: 100%;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.general-button:hover, .account-button:hover, .appearance-button:hover, .help-button:hover, .profile-button:hover, .logoff-button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.user-settings-item i{
+    padding-right: 0.5rem;
+}
+.profile-button i.bi-person-circle{
+    padding-right: 0.5rem;
+}
+.user-card-session{
+    border-top: thin solid #A3D1CB49;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.user-card-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    padding-bottom: 2em;
+    height: 70px;
+}
+.user-card-name .user-card-name-button{
+    background-color: transparent;
+    border: none;
+    padding: 0 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    color: #e1efed;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 100%;
+}
+.user-card-name .user-card-name-button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.user-name-title{
+    margin: 0;
+}
+.user-card-name-input{
+    background-color: #1f1c25;
+    border: none;
+    color: #e1efed;
+    font-family: inter, serif;
+    font-size: 1.421rem;
+    width: 100%;
+}
+.user-card-name-input:focus{
+    outline: none;
+}
+.user-card-description-input{
+    background-color: #1f1c25;
+    border: none;
+    color: #e1efed;
+    font-family: inter, serif;
+    font-size: 1.421rem;
+    width: 100%;
+}
+.user-card-description-input:focus{
+    outline: none;
+}
+.user-card-description{
+    display: flex;
+    flex-direction: column;
+}
+.user-card-description-content{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+    min-height: 3em;
+}
+.user-card-settings{
+    height: 70px;
+}
+.user-card-description-content .user-card-description-button{
+    background-color: transparent;
+    border: none;
+    padding: 0 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    color: #e1efed;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 100%;
+}
+.user-card-description-content .user-card-description-button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.user-card-description-subtitle{
+    margin: 0;
+}
+.user-description{
+    margin: 0;
+}
+/* GENERAL CARD */
+.general-card-container{
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    color: #e1efed;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    background-color: #2d2937;
+}
+.general-card-title{
+    padding-bottom: 1.5rem;
+}
+.general-card-subtitle{
+    padding-bottom: 0.25rem;
+}
+.general-card-language{
+    background-color: #595663;
+    color: #e1efed;
+    border: none;
+    border-radius: 0.25em;
+    width: 60%;
+}
+.general-card-language:focus{
+    outline: none;
+}
+/* ACCOUNT CARD */
+.account-card-container{
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    color: #e1efed;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    background-color: #2d2937;
+}
+.account-card-container .account-card-title{
+    padding-bottom: 1.5rem;
+}
+.account-card-subtitle{
+    padding-bottom: 0.25rem;
+}
+/* APPEARANCE CARD */
+.appearance-card-container{
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    color: #e1efed;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    background-color: #2d2937;
+}
+/* HELP CARD */
+.help-card-container{
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    color: #e1efed;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    background-color: #2d2937;
+}
+.help-card-title{
+    padding-bottom: 1.5rem;
+}
+.help-card-subtitle{
+    padding-bottom: 0.25rem;
+}
+
+@media (max-height: 932px) {
+    .user-card{
+        position: absolute;
+        padding: 8px;
+        max-width: 93vw;
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+    .user-card.open{
+        transform: translateX(0);
+    }
+    .general-button, .account-button, .appearance-button, .help-button, .profile-button{
+        font-size: 12px;
+    }
+    .general-button:hover, .account-button:hover, .appearance-button:hover, .help-button:hover, .profile-button:hover, .logoff-button:hover{
+        background-color: transparent;
+    }
+    .general-button:active, .account-button:active, .appearance-button:active, .help-button:active, .profile-button:active, .logoff-button:active{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+
+

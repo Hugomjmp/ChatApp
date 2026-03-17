@@ -1,0 +1,113 @@
+.register-form{
+    background-color: #a3d1cb33;
+    box-shadow: 0 0 20px 5px #a3d1cb88,
+    inset 0 0 10px 0 #a3d1cb55 ;
+    border-radius: 0.75rem;
+}
+.create_text{
+    text-align: center;
+    padding: 5px;
+    color: #e1efed;
+}
+.email_text{
+    color: #e1efed;
+}
+.display_text{
+    color: #e1efed;
+}
+.password_text{
+    color: #e1efed;
+}
+.verify_password_text{
+    color: #e1efed;
+}
+.email_input {
+    width: 100%;
+    padding: 0.1rem 0.5rem;
+    color: #e1efed;
+    font-family: inter, serif;
+    background-color: #e1efed0d;
+    border: none;
+    border-radius: 0.2rem;
+}
+.email_input.error {
+    border: thin solid red;
+}
+.Password_input.error {
+    border: thin solid red;
+}
+.verify_password_input.error {
+    border: thin solid red;
+}
+.display_input.error {
+    border: thin solid red;
+}
+.email_input:focus{
+    outline: none;
+}
+.display_input {
+    width: 100%;
+    padding: 0.1rem 0.5rem;
+    color: #e1efed;
+    font-family: inter, serif;
+    background-color: #e1efed0d;
+    border: none;
+    border-radius: 0.2rem;
+}
+.display_input:focus{
+    outline: none;
+}
+.password_input {
+    width: 100%;
+    padding: 0.1rem 0.5rem;
+    color: #e1efed;
+    font-family: inter, serif;
+    background-color: #e1efed0d;
+    border: none;
+    border-radius: 0.2rem;
+}
+.password_input:focus {
+    outline: none;
+}
+.verify_password_input {
+    width: 100%;
+    padding: 0.1rem 0.5rem;
+    color: #e1efed;
+    font-family: inter, serif;
+    background-color: #e1efed0d;
+    border: none;
+    border-radius: 0.2rem;
+}
+.verify_password_input:focus {
+    outline: none;
+}
+
+.register_account_btn {
+    padding: 0.5em;
+    background-color: #a3d1cb;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.register_account_btn:hover {
+    transform: translate(0px,-3px);
+
+}
+.existing_account{
+    color: #e1efed;
+    font-family: inter, serif;
+}
+.existing_account .existing_account_btn{
+    background-color: transparent;
+    border: none;
+    color: #e1efed;
+}
+.existing_account .existing_account_btn:hover{
+    text-decoration: underline;
+}
+@media (max-width: 932px) {
+    .register-form{
+        width: 85%;
+    }
+}

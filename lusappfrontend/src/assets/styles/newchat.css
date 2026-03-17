@@ -1,0 +1,145 @@
+.newChat-container{
+    position: absolute;
+    translate: 17rem 4rem;
+    padding: 1.25em;
+    z-index: 1;
+
+    background-color: #1f1c25;
+    width: 25%;
+    height: 40%;
+    color: #e1efed;
+    /*ver apartir daqui...*/
+    border-radius: 10px;
+    border: thin solid #A3D1CB49;
+    font-family: inter, serif;
+
+/*    transform: translate(-105%, 0);
+    transition: all 0.3s ease;*/
+}
+
+/*.newChat-container.open{
+    transform: translate(0, 0);
+    transition: all 0.3s ease;
+}*/
+
+.newChat-form, .newChat-form .newChat-search{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+
+}
+.newChat-search::placeholder {
+    color: #e1efed;
+    background-color: #ba7885;
+    border-radius: 7px;
+}
+
+.newChat-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.newChat-item{
+    width: 100%;
+}
+.newChat-subtitle{
+    margin: 0;
+    padding: 16px 0 5px 0;
+}
+.newChat-newGroup-btn, .newChat-newContact-btn{
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0 5px 5px;
+    color: #e1efed;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.newChat-newGroup-btn:hover, .newChat-newContact-btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.newChat-newContact-btn i.bi-person, .newChat-newGroup-btn i.bi-people{
+    font-size: 38px;
+    width: 58px;
+    aspect-ratio: 1/1;
+    background-color: rgba(113, 58, 115, 0.58);
+    border-radius: 50%;
+}
+.newChat-label{
+    padding-left: 1em;
+    align-self: center;
+}
+.pending-contact-item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 5px 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+}
+.pending-contact-item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.pending-contact-item-details{
+    display: flex;
+    align-items: center;
+}
+.pending-contact-item-username{
+    padding-left: 5px;
+}
+.contact-user-picture{
+    width: 58px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.accept-contact-btn{
+    background-color: #a3d1cb;
+    border: none;
+    border-radius: 6px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.pending-contact-item-decision{
+    display: flex;
+}
+.pending-contact-item-divider{
+    width: 6px;
+    align-self: center;
+}
+.reject-contact-btn{
+    background-color: #dc3545;
+    border: none;
+    border-radius: 6px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.accept-contact-btn:hover, .reject-contact-btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.contact-item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 5px 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+}
+.contact-item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.contact-start-chat-btn{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+.contact-item-details{
+    display: flex;
+    align-items: center;
+    color: #e1efed;
+}

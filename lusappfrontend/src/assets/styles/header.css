@@ -1,0 +1,88 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #e1efed;
+    padding-top: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid #A3D1CB49;
+    background-color: #713a7333;
+}
+.navbar-contacts-item{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #e1efed;
+    font-family: inter, serif;
+    text-align: center;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.navbar-contacts-item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.current-person-item{
+    display: flex;
+    align-items: center;
+}
+.current-person-item .current-person-picture{
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.current-person-name{
+    padding: 0 0 0 10px;
+}
+
+.voip-container{
+    display: flex;
+    background-color: rgba(113, 58, 115, 0.58);
+    border-radius: 5px;
+}
+
+.voip-divider{
+    align-self: center;
+    background-color: #A3D1CB49;
+    width: 1px;
+    height: 26px;
+}
+
+.phone, .camera-video{
+    background-color: transparent;
+    border: none;
+    color: #e1efed;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+}
+.phone i {
+    font-size: 1.25em;
+}
+.camera-video i {
+    font-size: 1.25em;
+}
+
+.phone:hover, .camera-video:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 932px){
+    .navbar{
+        width: 100%;
+    }
+    .navbar-contacts-item:hover{
+        background-color: transparent;
+    }
+    .navbar-contacts-item:active{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .phone:hover, .camera-video:hover{
+        background-color: transparent;
+    }
+    .phone:active, .camera-video:active{
+        background-color: rgba(255, 255, 255, 0.1);;
+    }
+}

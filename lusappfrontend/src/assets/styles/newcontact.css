@@ -1,0 +1,98 @@
+.newContact-container{
+    position: absolute;
+    translate: 17rem 4rem;
+    padding: 1.25em;
+    z-index: 1;
+
+    background-color: #1f1c25;
+    width: 25%;
+    height: 40%;
+    color: #e1efed;
+    /*ver apartir daqui...*/
+    border-radius: 10px;
+    border: thin solid #A3D1CB49;
+    font-family: inter, serif;
+
+    /*    transform: translate(-105%, 0);
+        transition: all 0.3s ease;*/
+}
+.newContactForm, .newContactForm .newContact-search{
+    width: 100%;
+}
+.newContactForm .newContact-search{
+    border: none;
+    background-color: #ba7885;
+    border-radius: 7px;
+    color: #e1efed;
+}
+.newContact-search::placeholder {
+    color: #e1efed;
+}
+.newContact-search:focus{
+    outline: none;
+}
+.newContact-title-container{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.newContact-back-btn{
+    background-color: transparent;
+    color: #e1efed;
+    border: none;
+    border-radius: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.newContact-back-btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.newContact-back-btn .bi-arrow-left{
+    font-size: 28px;
+    aspect-ratio: 1/1;
+}
+.newContact-title{
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/*.newChat-container.open{
+    transform: translate(0, 0);
+    transition: all 0.3s ease;
+}*/
+
+/*
+
+.newChat-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.newChat-item{
+    width: 100%;
+}
+.newChat-newGroup-btn, .newChat-newContact-btn{
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0 5px 5px;
+    color: #e1efed;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.newChat-newGroup-btn:hover, .newChat-newContact-btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.newChat-newContact-btn i.bi-person, .newChat-newGroup-btn i.bi-people{
+    font-size: 38px;
+    width: 58px;
+    aspect-ratio: 1/1;
+    background-color: rgba(113, 58, 115, 0.58);
+    border-radius: 50%;
+}
+
+.newChat-label{
+    padding-left: 1em;
+    align-self: center;
+}*/

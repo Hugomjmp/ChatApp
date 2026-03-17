@@ -1,0 +1,139 @@
+.sidebarContacts{
+    background-color: #713a7333;
+    display: flex;
+    flex-direction: column;
+    /*width: 20%;*/
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+.sidebarContacts.open{
+    width: 348px;
+    transform: translateX(0);
+    transition: width 0.3s ease;
+    border-right: thin solid #A3D1CB49;
+}
+.sidebarContacts-item-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 10px;
+}
+.sidebarContacts-item{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #e1efed;
+    font-family: inter, serif;
+    width: 100%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px 0 10px 10px;
+}
+.sidebarContacts-picture{
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sidebarContacts .sidebarContacts-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 0.5rem 1rem;
+    margin: 0px;
+    color: #e1efed;
+    font-family: inter, serif;
+    padding-bottom: 20px;
+    position: relative;
+    /*border-bottom: thin solid #a3d1cb;*/
+}
+.sidebarContacts-title .sidebarContacts-new-chat-btn{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #e1efed;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.sidebarContacts-title .sidebarContacts-new-chat-btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebarContacts-item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebarContacts-title .sidebarContacts-pending-number{
+    position: absolute;
+    right: 1.9rem;
+    top: 0.1rem;
+    width: 20px;
+    aspect-ratio: 1/1;
+    color: #e1efed;
+    background-color: #ba7885;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pending-number{
+    margin: 0;
+
+    font-size: 0.8rem;
+}
+.sidebarContacts-form{
+    width: 100%;
+    padding: 1rem 0.5rem 1rem;
+
+}
+.search-bar{
+    background-color: #ba7885;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    font-family: inter, serif;
+    color: #e1efed;
+}
+.search-bar::placeholder{
+    color: #e1efed;
+    font-family: inter, serif;
+}
+.search-bar:focus{
+    outline: none;
+}
+.lastMessage{
+    font-size: 0.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (max-width: 932px) {
+    .sidebarContacts{
+        transform: translateY(100%);
+        width: 100%;
+        height: 0;
+        transition: height 0.3s ease;
+        padding-top: 0;
+
+    }
+    .sidebarContacts.open{
+        height: 100%;
+        width: 100%;
+        transform: translateY(0);
+        transition: height 0.3s ease;
+        border-right: none;
+    }
+    .sidebarContacts-item:hover{
+        background-color: transparent;
+    }
+    .sidebarContacts-item:active{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+}
